@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=McLaren&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="shortcut icon" href="img/Web-Logo.png" type="image/x-icon" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Color Pallete Genrator</title>
+    </head>
+    <body>
+        <!-- * HEADER -->
+        <div class="header">
+            <nav class="nav">
+                <div class="nav_logo">
+                    <img
+                        src="img/Web-Logo.png"
+                        alt="Web-Logo"
+                        class="nav_img"
+                    />
+                </div>
+                <div class="nav_link">
+                    <ul class="nav_ul">
+                        <li class="nav_li">
+                            <button class="randomBtn" id="random-btn">
+                                Generate
+                            </button>
+                        </li>
+                        <li class="nav_li">
+                            <button class="updownBtn" id="UpDownBtn">
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- * SECTIONS -->
+        <!-- // Hero Section -->
+        <section class="heroSection" id="heropage">
+            <div class="heroLeft">
+                <h1 class="heroLeft-heading">
+                    Generate <span class="randomAccent">Random</span> Color
+                    Pallates !
+                </h1>
+                <p class="heroLeft-para">
+                    Choose the color pallate for your project in seconds!, Just
+                    press the "Generate" button and get a unique color pallate
+                    for your project.
+                </p>
+                <div class="heroLeft-btnContainer">
+                    <button class="heroLeft-btn1 heroLeft-btn" id="random-btn">
+                        Generate !
+                    </button>
+                    <button class="heroLeft-btn2 heroLeft-btn">
+                        <a
+                            href="https://mchaxyt.github.io/Personal-Portfolio-Website/"
+                            target="_blank"
+                            >Contact Me</a
+                        >
+                    </button>
+                </div>
+            </div>
+            <div class="heroRight">
+                <div class="wrapper grid__2">
+                    <div class="body-color colorBlock"></div>
+                    <div class="heading-color colorBlock"></div>
+                </div>
+                <div class="wrapper grid__3">
+                    <div class="text-color colorBlock"></div>
+                    <div class="primary-color colorBlock"></div>
+                    <div class="accent-color colorBlock"></div>
+                    <div class="sec-text-color colorBlock"></div>
+                </div>
+                <div class="wrapper grid__1">
+                    <div class="secondary-color colorBlock"></div>
+                </div>
+            </div>
+        </section>
+        <!-- // Why Section -->
+        <section class="saveTime-Section" id="whypage">
+            <h1 class="saveTime-h">Why Use It ?</h1>
+            <div class="saveTime-cards">
+                <div class="savetime-card">
+                    <h1>Save Time</h1>
+                    <p>
+                        Save your time by just generating random pallates and
+                        get your unique colors with different variations.
+                        Generating different colors don't take as much time as
+                        finding them manualy, Be more productive and creative
+                        with your work.
+                    </p>
+                </div>
+                <div class="savetime-card">
+                    <h1>Unique Colors</h1>
+                    <p>
+                        Get the most unique color combination in seconds and
+                        configure to style of your project and preference. Keep
+                        on generating different colors and color pallates to
+                        your liking and implement them in you project with no
+                        effort
+                    </p>
+                </div>
+                <div class="savetime-card">
+                    <h1>Easy To Use</h1>
+                    <p>
+                        Simple to use and very benifical, Just copy the hex
+                        color to use code it's that easy now. See real time
+                        example of how it would look on a webpage compared to
+                        just looking at plain color it gives better idea.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- // Grid Section -->
+        <section class="grid-section" id="aboutpage">
+            <div class="gridStat-div">
+                <div class="gridStats grid__5">
+                    <div class="gridstat grid--col4 bg-secondary">
+                        <h1>100% Free!</h1>
+                        <p>was, is and will always stay free forever</p>
+                    </div>
+                    <div class="gridstat grid--col1 bg-accent">
+                        <img
+                            src="img/Web-Logo.png"
+                            alt="Web-Logo"
+                            style="width: 80px"
+                        />
+                    </div>
+                </div>
+                <div class="gridStats grid__5">
+                    <div class="gridstat grid--col3 bg-p">
+                        <h1 class="text-bg-body">Wanna Hire Me ?</h1>
+                        <button class="heroLeft-btn2 heroLeft-btn">
+                            <a
+                                href="https://mchaxyt.github.io/Personal-Portfolio-Website/"
+                                target="_blank"
+                                >Contact Me</a
+                            >
+                        </button>
+                    </div>
+                    <div class="gridstat grid--col2 bg-primary">
+                        <h1>Be Productive !</h1>
+                        <p>work smart and hard.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- // Update Section -->
+        <section class="update-section" id="updatepage">
+            <div class="updateSection">
+                <h1>
+                    New <span class="text-primary-color">Better</span> And
+                    <span class="text-primary-color">Updated</span> Version Of
+                    Website
+                    <span class="text-secondary-color text-shadow"
+                        >Coming Soon</span
+                    >
+                    !
+                </h1>
+                <p>
+                    Stay tuned to find out! launching new version on: xx/xx/23.
+                </p>
+            </div>
+        </section>
+        <!-- * BTN CONTAINER -->
+        <div class="button-container">
+            <div class="btn-overlay" style="bottom: 0">
+                <div class="colorNames" id="BodyPallate-Container">
+                    <h1 class="colorHeading">Body:</h1>
+                    <p class="colorName">
+                        <span id="body-color">#fff</span>
+                    </p>
+                </div>
+                <div class="colorNames" id="HeadingPallate-Container">
+                    <h1 class="colorHeading">Heading:</h1>
+                    <p class="colorName">
+                        <span id="heading-color">#080808</span>
+                    </p>
+                </div>
+                <div class="colorNames" id="TextPallate-Container">
+                    <h1 class="colorHeading">Text:</h1>
+                    <p class="colorName">
+                        <span id="para-color">#080808</span>
+                    </p>
+                </div>
+                <div class="colorNames" id="PrimaryPallate-Container">
+                    <h1 class="colorHeading">Primary:</h1>
+                    <p class="colorName">
+                        <span id="primary-color">#1ce231</span>
+                    </p>
+                </div>
+                <div class="colorNames" id="SecondaryPallate-Container">
+                    <h1 class="colorHeading">Secondary:</h1>
+                    <p class="colorName">
+                        <span id="secondary-color">#f5add8</span>
+                    </p>
+                </div>
+                <div class="colorNames" id="AccentPallate-Container">
+                    <h1 class="colorHeading">Accent:</h1>
+                    <p class="colorName">
+                        <span id="accent-color">#ff2c2c</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <!-- * FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="text-bg-body">
+                Copyright <span class="text-primary-color">© 2023</span> . All
+                rights are reserved
+            </p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script
+        src="https://kit.fontawesome.com/22f6533c22.js"
+        crossorigin="anonymous"
+    ></script>
+</html>
