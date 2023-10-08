@@ -2,7 +2,6 @@
 
 // // Background Colors
 const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
-const bgColor = ["F", "F", "C", "A", "F", "D", "E", "C"];
 
 // // Text Color
 const h1colors = ["#191717", "#040D12", "#0c080b", "#232428"];
@@ -50,8 +49,7 @@ const accentPallateContainer = document.getElementById(
 // // Generate Event
 generatebtns.forEach((generatebtn) => {
     generatebtn.addEventListener("click", function () {
-        getRandomUniqueColor(
-            bgColor,
+        getRandomUniqueLightColor(
             "--body-color",
             bodyColorText,
             bodyPallateContainer
@@ -140,6 +138,17 @@ function getRandomUniqueColor(
         let hexRandomColor = colorPallate[getRandomNumber(colorPallate)];
         hexColor += hexRandomColor;
     }
+    root.style.setProperty(propertyName, hexColor);
+    tagName.textContent = hexColor;
+    tagContainer.style.background = hexColor;
+}
+
+// // Unique Random Light Color
+
+function getRandomUniqueLightColor(propertyName, tagName, tagContainer) {
+    let hexColor = "hsl";
+    let hexRandomColor = "(" + Math.floor(Math.random() * 360) + ", 100%, 97%)";
+    hexColor += hexRandomColor;
     root.style.setProperty(propertyName, hexColor);
     tagName.textContent = hexColor;
     tagContainer.style.background = hexColor;
